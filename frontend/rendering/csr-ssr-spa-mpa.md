@@ -2,7 +2,7 @@
 
 ## 단어 뜻
 
-- `CSR(Client Side Rendering)`: 서버가 기본 HTML과 JavaScript bundle을 보내고, 브라우저가 JavaScript를 실행해 필요하면 API 데이터를 받아 화면을 완성하는 방식입니다.
+- `CSR(Client Side Rendering)`: 첫 진입 때 브라우저가 최소 HTML 문서와 JavaScript bundle을 받고, JavaScript를 실행해 필요하면 API 데이터를 받아 화면을 완성하는 방식입니다.
 - `SSR(Server Side Rendering)`: 서버가 화면이 그려진 HTML을 먼저 보내고, 필요한 JavaScript가 브라우저에서 나중에 기능을 연결하는 방식입니다.
 - `SPA(Single Page Application)`: 처음 받은 앱 shell과 클라이언트 라우터 안에서 주소를 바꾸고, 이미 로드된 코드나 저장된 데이터를 우선 쓰며, 필요할 때만 JS chunk나 API 데이터를 받아 안쪽 화면만 다시 그리는 방식입니다.
 - `MPA(Multi Page Application)`: 이동할 때마다 브라우저가 새 URL로 요청하고, 서버가 새 HTML 문서와 필요한 CSS/JavaScript를 보내 화면 전체를 다시 로드하는 방식입니다.
@@ -24,9 +24,9 @@ CSR과 SSR은 첫 화면을 어디서 그리느냐의 차이입니다. SPA와 MP
 
 ## 개념 설명
 
-CSR/SSR과 SPA/MPA는 서로 같은 축이 아닙니다. CSR과 SSR은 렌더링 방식입니다. 사용자가 페이지에 들어왔을 때 서버가 화면이 그려진 HTML을 먼저 보내면 SSR이고, 브라우저가 JavaScript를 실행해서 화면을 만들면 CSR입니다. SSR도 버튼이나 이벤트가 동작하려면 브라우저에서 JavaScript가 hydration으로 연결되어야 할 수 있습니다.
+CSR/SSR과 SPA/MPA는 서로 같은 축이 아닙니다. CSR과 SSR은 렌더링 방식입니다. 사용자가 페이지에 처음 들어왔을 때 서버가 화면이 그려진 HTML을 먼저 보내면 SSR이고, 브라우저가 최소 HTML 문서와 JavaScript를 받은 뒤 JavaScript를 실행해서 화면을 만들면 CSR입니다. SSR도 버튼이나 이벤트가 동작하려면 브라우저에서 JavaScript가 hydration으로 연결되어야 할 수 있습니다.
 
-SPA와 MPA는 앱 구조입니다. SPA는 처음 로드한 앱 shell 안에서 클라이언트 라우터가 화면을 바꿉니다. 주소는 바뀌지만 매번 전체 HTML 문서를 새로 받지 않습니다. 이미 로드된 JS chunk, 메모리/store/query cache, 브라우저 cache에 있는 데이터가 있으면 그것을 쓰고, 없거나 갱신이 필요할 때만 API 데이터나 JS chunk를 받아 안쪽 화면을 다시 그립니다. MPA는 페이지를 이동할 때마다 브라우저가 새 URL로 요청하고, 서버에서 새 HTML 문서와 필요한 CSS/JavaScript를 받아 화면 전체를 다시 로드합니다.
+SPA와 MPA는 앱 구조입니다. SPA는 처음 로드한 앱 shell 안에서 클라이언트 라우터가 화면을 바꿉니다. 주소는 바뀌지만 매번 전체 HTML 문서를 새로 받지 않습니다. 이미 로드된 JS chunk, 메모리/store/query cache, 브라우저 cache에 있는 데이터가 있으면 그것을 쓰고, 없거나 갱신이 필요할 때만 API 데이터나 JS chunk를 받아 안쪽 화면을 다시 그립니다. 그래서 SPA 안에서 라우팅으로 이동할 때는 Network 탭에 새 `document` 요청이 보이지 않을 수 있습니다. MPA는 페이지를 이동할 때마다 브라우저가 새 URL로 요청하고, 서버에서 새 HTML 문서와 필요한 CSS/JavaScript를 받아 화면 전체를 다시 로드합니다.
 
 ## 그래서 뭐가 좋은데?
 
