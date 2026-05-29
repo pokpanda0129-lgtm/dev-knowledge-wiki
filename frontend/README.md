@@ -6,6 +6,7 @@
 
 ### Rendering
 
+- [브라우저 렌더링 원리](./rendering/browser-rendering-process.md)
 - [CSR, SSR, SPA, MPA 이해](./rendering/csr-ssr-spa-mpa.md)
 
 ### Nuxt
