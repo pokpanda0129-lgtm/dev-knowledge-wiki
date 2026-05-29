@@ -9,9 +9,19 @@
 - Rendering
 - Routing
 - Performance
+- Infrastructure
 
 ## Articles
 
 ### Rendering
 
 - [CSR, SSR, SPA, MPA 이해](./rendering/csr-ssr-spa-mpa.md)
+
+### Nuxt
+
+- [Nitro](./nuxt/nitro.md)
+
+### Infrastructure
+
+- [OpenResty](./infrastructure/openresty.md)
+- [SWR](./infrastructure/swr.md)
