@@ -4,6 +4,10 @@
 
 ## Articles
 
+### JavaScript
+
+- [JavaScript ES6 이해](./javascript/es6.md)
+
 ### Rendering
 
 - [브라우저 렌더링 원리](./rendering/browser-rendering-process.md)
