@@ -1,0 +1,8 @@
+interface:
+  display_name: "개발 지식 위키"
+  short_description: "실무 예시와 시각 자료 중심의 한국어 개발 위키"
+  brand_color: "#2563EB"
+  default_prompt: "Use $dev-knowledge-wiki to create a concise Korean development wiki article."
+policy:
+  allow_implicit_invocation: true
+
