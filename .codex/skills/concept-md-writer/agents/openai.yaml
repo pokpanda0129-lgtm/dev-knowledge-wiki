@@ -1,0 +1,4 @@
+interface:
+  display_name: "Concept MD Writer"
+  short_description: "Java and frontend concept note writer"
+  default_prompt: "Use this skill to draft or improve a Java/frontend concept Markdown note."

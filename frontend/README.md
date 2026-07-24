@@ -6,6 +6,12 @@
 
 - Vue
 - Nuxt
+- JavaScript
 - Rendering
 - Routing
 - Performance
+
+## Notes
+
+- [SSR vs CSR](./rendering/ssr-vs-csr.md)
+- [JS 얕은복사와 깊은복사](./javascript/shallow-copy-vs-deep-copy.md)
