@@ -2,22 +2,16 @@
 
 프론트엔드 관련 개념 정리
 
-## Articles
+## Categories
 
-### JavaScript
+- Vue
+- Nuxt
+- JavaScript
+- Rendering
+- Routing
+- Performance
 
-- [JavaScript ES6 이해](./javascript/es6.md)
+## Notes
 
-### Rendering
-
-- [브라우저 렌더링 원리](./rendering/browser-rendering-process.md)
-- [CSR, SSR, SPA, MPA 이해](./rendering/csr-ssr-spa-mpa.md)
-
-### Nuxt
-
-- [Nitro](./nuxt/nitro.md)
-
-### Infrastructure
-
-- [OpenResty](./infrastructure/openresty.md)
-- [SWR](./infrastructure/swr.md)
+- [SSR vs CSR](./rendering/ssr-vs-csr.md)
+- [JS 얕은복사와 깊은복사](./javascript/shallow-copy-vs-deep-copy.md)
